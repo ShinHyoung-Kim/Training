@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21092" started-at="2012-11-05T04:58:00Z" finished-at="2012-11-05T04:58:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21092" started-at="2012-11-05T04:58:00Z" finished-at="2012-11-05T04:58:21Z">
+      <class name="MoblilPay">
+        <test-method status="PASS" signature="startServer()[pri:0, instance:MoblilPay@74a456bb]" name="startServer" is-config="true" duration-ms="4201" started-at="2012-11-05T13:57:55Z" finished-at="2012-11-05T13:58:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startServer -->
+        <test-method status="PASS" signature="testLogIn()[pri:0, instance:MoblilPay@74a456bb]" name="testLogIn" is-config="true" duration-ms="12084" started-at="2012-11-05T13:58:00Z" finished-at="2012-11-05T13:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogIn -->
+        <test-method status="FAIL" signature="testMyPalaoo()[pri:0, instance:MoblilPay@74a456bb]" name="testMyPalaoo" duration-ms="4539" started-at="2012-11-05T13:58:12Z" finished-at="2012-11-05T13:58:16Z">
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[Element //div[@id='mypalaooForm']/div[2]//div[@id='mypalaooForm']/div[2]/div[4]/table/tbody/tr/td[2] not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: Element //div[@id='mypalaooForm']/div[2]//div[@id='mypalaooForm']/div[2]/div[4]/table/tbody/tr/td[2] not found
+	at org.openqa.selenium.internal.seleniumemulation.ElementFinder.findElement(ElementFinder.java:96)
+	at org.openqa.selenium.internal.seleniumemulation.GetText.handleSeleneseCommand(GetText.java:42)
+	at org.openqa.selenium.internal.seleniumemulation.GetText.handleSeleneseCommand(GetText.java:1)
+	at org.openqa.selenium.internal.seleniumemulation.SeleneseCommand.apply(SeleneseCommand.java:32)
+	at org.openqa.selenium.internal.seleniumemulation.Timer.run(Timer.java:38)
+	at org.openqa.selenium.WebDriverCommandProcessor.execute(WebDriverCommandProcessor.java:144)
+	at org.openqa.selenium.WebDriverCommandProcessor.getString(WebDriverCommandProcessor.java:115)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:471)
+	at MoblilPay.testMyPalaoo(MoblilPay.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot find an element with the xpath: //div[@id='mypalaooForm']/div[2]//div[@id='mypalaooForm']/div[2]/div[4]/table/tbody/tr/td[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:09:54'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_07'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.internal.seleniumemulation.ElementFinder.xpathWizardry(ElementFinder.java:146)
+	at org.openqa.selenium.internal.seleniumemulation.ElementFinder.findElementDirectlyIfNecessary(ElementFinder.java:120)
+	at org.openqa.selenium.internal.seleniumemulation.ElementFinder.findElement(ElementFinder.java:90)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMyPalaoo -->
+        <test-method status="PASS" signature="testKogOut()[pri:0, instance:MoblilPay@74a456bb]" name="testKogOut" is-config="true" duration-ms="4430" started-at="2012-11-05T13:58:16Z" finished-at="2012-11-05T13:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKogOut -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MoblilPay@74a456bb]" name="tearDown" is-config="true" duration-ms="418" started-at="2012-11-05T13:58:21Z" finished-at="2012-11-05T13:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MoblilPay -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
